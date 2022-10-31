@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks Page</title>
+    <style>
+        body{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        var queryString = window.location.search;
+        var queryStringparams = new URLSearchParams(queryString);
+        document.write("First Name: ",queryStringparams.get("firstname"));
+        document.write("Last Name: ",queryStringparams.get("laststname"));
+        document.write("Email Address: ",queryStringparams.get("email"));
+        document.write("Govt. Issued ID: ",queryStringparams.get("govtissueid"));
+        document.write("Date of Arrival: ",queryStringparams.get("dateofarrival"));
+        document.write("Date of Departure: ",queryStringparams.get("dateofdeparture"));
+        document.write("Country: ",queryStringparams.get("Country"));
+        document.write("Number of Person: ",queryStringparams.get("numberofperson"));
+        document.write("Any Special Request: ",queryStringparams.get("request"));
+        document.write("Payment Method: ",queryStringparams.get("paymentmethod"));
+        alert("Registration Successful ! ")
+        alert("Thanks for visiting IGNOU ! ")
+    </script>
+</body>
+</html>
